@@ -1,0 +1,15 @@
+matem.ptg.galleria.egg-info
+
+*.pyc
+
+*.zip
+
+matem/.DS_Store
+
+matem/ptg/.DS_Store
+
+matem/ptg/galleria/.DS_Store
+
+.DS_Store
+
+*.mo

@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="matem.ptg.galleria">
+
+    <i18n:registerTranslations directory="locales" />
+
+    <browser:resourceDirectory
+        name="matem.ptg.galleria"
+        directory="resources"
+        />
+
+<!--     <adapter
+        for="collective.plonetruegallery.interfaces.IGallery"
+        provides=".IGalleriaDisplaySettings"
+        factory=".GalleriaSettings" /> -->
+
+    <browser:page
+        for="collective.plonetruegallery.interfaces.IGallery"
+        name="matem-galleria"
+        class="collective.ptg.galleria.GalleriaDisplayType"
+        template="galleria.pt"
+        permission="zope2.View" />
+
+    <utility
+        component=".GalleriaDisplayType"
+        provides="collective.plonetruegallery.interfaces.IDisplayType"
+        name="matem-galleria" />
+
+</configure>

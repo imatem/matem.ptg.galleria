@@ -1,0 +1,3 @@
+recursive-include matem *
+recursive-include docs *
+include README.rst
