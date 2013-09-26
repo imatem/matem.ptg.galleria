@@ -24,7 +24,7 @@
         permission="zope2.View" />
 
     <utility
-        component=".GalleriaDisplayType"
+        component="collective.ptg.galleria.GalleriaDisplayType"
         provides="collective.plonetruegallery.interfaces.IDisplayType"
         name="matem-galleria" />
 

@@ -26,7 +26,7 @@ setup(name='matem.ptg.galleria',
       install_requires=[
           'setuptools',
           'collective.plonetruegallery',
-          'collective.ptg.galleria'
+          'collective.ptg.galleria',
       ],
       entry_points="""
       # -*- Entry points: -*-
