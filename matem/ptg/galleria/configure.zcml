@@ -19,12 +19,12 @@
     <browser:page
         for="collective.plonetruegallery.interfaces.IGallery"
         name="matem-galleria"
-        class="collective.ptg.galleria.GalleriaDisplayType"
+        class="matem.ptg.galleria.IMGalleriaDisplayType"
         template="galleria.pt"
         permission="zope2.View" />
 
     <utility
-        component="collective.ptg.galleria.GalleriaDisplayType"
+        component="matem.ptg.galleria.IMGalleriaDisplayType"
         provides="collective.plonetruegallery.interfaces.IDisplayType"
         name="matem-galleria" />
 

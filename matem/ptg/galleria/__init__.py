@@ -2,6 +2,7 @@
 
 from collective.plonetruegallery.browser.views.display import BaseDisplayType
 from collective.plonetruegallery.browser.views.display import jsbool
+from collective.plonetruegallery.utils import createSettingsFactory
 from collective.ptg.galleria import IGalleriaDisplaySettings
 from plone.memoize.view import memoize
 from zope.i18nmessageid import MessageFactory
@@ -9,12 +10,12 @@ from zope.i18nmessageid import MessageFactory
 _ = MessageFactory('matem.ptg.galleria')
 
 
-class GalleriaDisplayType(BaseDisplayType):
+class IMGalleriaDisplayType(BaseDisplayType):
 
     name = u"im_galleria"
     schema = IGalleriaDisplaySettings
     description = _(u"label_galleria_display_type",
-        default=u"Custom matem Galleria")
+        default=u"IM Galleria")
 
     js_theme_files = {
         'light': '++resource++ptg.galleria/im_light.js',
@@ -95,3 +96,5 @@ $(document).ready(function() {
         return """%s (<a class="download" href="%s">Download</a>)""" %(
             img['description'],
             img.get('download_url', img.get('image_url')))
+
+GalleriaSettings = createSettingsFactory(IMGalleriaDisplayType.schema)
