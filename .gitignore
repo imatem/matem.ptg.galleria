@@ -13,3 +13,5 @@ matem/ptg/galleria/.DS_Store
 .DS_Store
 
 *.mo
+
+setup.cfg
