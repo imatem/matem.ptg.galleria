@@ -97,4 +97,4 @@ $(document).ready(function() {
             img['description'],
             img.get('download_url', img.get('image_url')))
 
-GalleriaSettings = createSettingsFactory(IMGalleriaDisplayType.schema)
+# GalleriaSettings = createSettingsFactory(IMGalleriaDisplayType.schema)

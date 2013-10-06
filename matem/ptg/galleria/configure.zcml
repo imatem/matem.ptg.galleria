@@ -16,16 +16,16 @@
         provides=".IGalleriaDisplaySettings"
         factory=".GalleriaSettings" /> -->
 
-    <browser:page
+<!--     <browser:page
         for="collective.plonetruegallery.interfaces.IGallery"
         name="matem-galleria"
         class="matem.ptg.galleria.IMGalleriaDisplayType"
         template="galleria.pt"
-        permission="zope2.View" />
+        permission="zope2.View" /> -->
 
-    <utility
+<!--     <utility
         component="matem.ptg.galleria.IMGalleriaDisplayType"
         provides="collective.plonetruegallery.interfaces.IDisplayType"
         name="matem-galleria" />
-
+ -->
 </configure>
