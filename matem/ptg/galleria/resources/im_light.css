@@ -231,7 +231,9 @@
     background-image: url(++resource++ptg.galleria/images/classic-map.png);
     background-repeat: no-repeat;
 }
-
+.galleria-thumbnails{
+    width: auto !important;
+}
 
 #galleria{
     margin: 15px auto;
